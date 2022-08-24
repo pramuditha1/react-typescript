@@ -5,6 +5,7 @@ import { Greet } from './components/Greet';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
 import { Status} from './components/Status';
+import { Header } from './components/Header';
 
 function App() {
   const person = {
@@ -29,17 +30,21 @@ function App() {
   return (
     <div className="App">
       {/* Typescript types sring and integer */}
-      <Greet name={'Pramuditha'} messageCount={10}/>
+      {/* <Greet name={'Pramuditha'} messageCount={10}/> */}
 
       {/* Typescript object example */}
-      <Person name={person}/>
+      {/* <Person name={person}/> */}
 
       {/* Typescript array example */}
-      <PersonList persons={personArr} />
+      {/* <PersonList persons={personArr} /> */}
 
       {/* Advanced props */}
       {/* You can pass only loading, logged or login failed Status */}
-      <Status status={'loading'} />
+      {/* <Status status={'loading'} /> */}
+
+      {/* Children props */}
+      <Header>My header text</Header>
+
     </div>
   );
 }
