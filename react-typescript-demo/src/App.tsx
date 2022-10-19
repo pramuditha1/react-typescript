@@ -43,7 +43,9 @@ function App() {
       {/* <Status status={'loading'} /> */}
 
       {/* Children props */}
-      <Header>My header text</Header>
+      {/* <Header>My header text</Header> */}
+
+      
 
     </div>
   );
